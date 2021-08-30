@@ -1,0 +1,9 @@
+.info-card {
+  height: 25em !important;
+  background-color: red;
+}
+
+.image-card {
+  height: 25em !important;
+  background-color: yellow;
+}
