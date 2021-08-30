@@ -1,11 +1,13 @@
 .info-card {
   height: 25em !important;
   border-radius: 1em !important;
-  box-shadow: 10px 5px 5px #eceff1;
+  -webkit-box-shadow: 0 0 1em #9ea7aa;
+  box-shadow: 0 0 1em #9ea7aa;
 }
 
 .image-card {
   height: 25em !important;
   border-radius: 1em !important;
-  box-shadow: 10px 5px 5px #eceff1;
+  -webkit-box-shadow: 0 0 1em #9ea7aa;
+  box-shadow: 0 0 1em #9ea7aa;
 }

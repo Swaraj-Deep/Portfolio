@@ -1,6 +1,7 @@
 .image:hover {
   margin-top: 0.3em !important;
   margin-bottom: 0.3em !important;
-  border: 0.1em solid black;
-  box-shadow: 10px 5px 5px #eceff1;
+  border: 0.1em solid #9ea7aa;
+  -webkit-box-shadow: 0 0 1em #9ea7aa;
+  box-shadow: 0 0 1em #9ea7aa;
 }
