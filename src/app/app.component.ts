@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {ImageBoxConfig} from "./models/ImageBox.model";
 
 @Component({
@@ -7,6 +7,7 @@ import {ImageBoxConfig} from "./models/ImageBox.model";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Portfolio';
+  title: string = 'Portfolio';
   configImgSrc: ImageBoxConfig = new ImageBoxConfig('150px', '150px', '50%', '10');
+  imgSrc: string = 'https://source.unsplash.com/random';
 }

@@ -8,7 +8,7 @@ import {ImageBoxConfig} from "../../models/ImageBox.model";
 })
 export class ImageBoxComponent implements AfterViewInit {
 
-  @Input() configImgSrc: ImageBoxConfig = new ImageBoxConfig('', '', '', '');
+  @Input() configImgSrc: ImageBoxConfig = new ImageBoxConfig();
   @Input() imgSrc: string = '';
   @ViewChild('htmlImageElement', {static: false, read: ElementRef})
   htmlImg!: ElementRef<HTMLImageElement>;
@@ -20,9 +20,7 @@ export class ImageBoxComponent implements AfterViewInit {
     obj[key];
 
   ngAfterViewInit(): void {
-    console.log(this.imgSrc)
     const imgTag = this.htmlImg.nativeElement;
-    console.log(this.configImgSrc);
     Object.keys(this.configImgSrc).forEach((styleDescriptor: any) => {
       imgTag.style[styleDescriptor] = this.getKeyValue<keyof ImageBoxConfig, ImageBoxConfig>(styleDescriptor)(this.configImgSrc)
     });
