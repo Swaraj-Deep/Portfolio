@@ -1,11 +1,11 @@
-import {AfterViewInit, Component, ElementRef, Input, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-text',
   templateUrl: './text.component.html',
   styleUrls: ['./text.component.css']
 })
-export class TextComponent implements AfterViewInit {
+export class TextComponent implements AfterViewInit, OnInit {
 
   @Input() text: string | undefined;
   @Input() greeting: string = '';
@@ -37,16 +37,20 @@ export class TextComponent implements AfterViewInit {
     }, this.time);
   }
 
-  ngAfterViewInit(): void {
-    if (!this.text) {
-      const typingElement = this.htmlTypingElement.nativeElement;
-      this.type(this.words, typingElement);
-    }
+  ngOnInit(): void {
     if (this.text && this.words) {
       this.words.forEach(word => {
         this.text += word + ', ';
       });
     }
+  }
+
+  ngAfterViewInit(): void {
+    if (!this.text) {
+      const typingElement = this.htmlTypingElement.nativeElement;
+      this.type(this.words, typingElement);
+    }
+
   }
 
 }
