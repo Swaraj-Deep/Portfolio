@@ -1,4 +1,4 @@
-.image:hover {
+.hoverEffect:hover {
   border: 0.1em solid #9ea7aa;
   -webkit-box-shadow: 0 0 1em #9ea7aa;
   box-shadow: 0 0 1em #9ea7aa;
@@ -7,4 +7,5 @@
 .image {
   margin: 0.3em !important;
   margin-top: -50% !important;
+  border: 0.5em solid white;
 }

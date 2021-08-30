@@ -7,6 +7,7 @@ import {AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild} from '@a
 })
 export class TextComponent implements AfterViewInit, OnInit {
 
+  @Input() hoverEffect: boolean = false;
   @Input() text: string | undefined;
   @Input() greeting: string = '';
   @Input() words: string[] = [];

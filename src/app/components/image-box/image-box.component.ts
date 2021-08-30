@@ -8,6 +8,7 @@ import {ImageBoxConfig} from "../../models/ImageBox.model";
 })
 export class ImageBoxComponent implements AfterViewInit {
 
+  @Input() hoverEffect: boolean = false;
   @Input() configImgSrc: ImageBoxConfig = new ImageBoxConfig();
   @Input() imgSrc: string = '';
   @ViewChild('htmlImageElement', {static: false, read: ElementRef})
