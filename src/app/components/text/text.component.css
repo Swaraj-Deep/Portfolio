@@ -1,12 +1,13 @@
 .text {
   margin: 0 !important;
   padding: 0 !important;
+  font-weight: 500;
 }
 
 .text:hover {
   margin-top: 0.3em !important;
   margin-bottom: 0.3em !important;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .typing {

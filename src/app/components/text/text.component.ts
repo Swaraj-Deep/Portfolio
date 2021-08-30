@@ -7,9 +7,10 @@ import {AfterViewInit, Component, ElementRef, Input, ViewChild} from '@angular/c
 })
 export class TextComponent implements AfterViewInit {
 
-  @Input() text: string = 'Provide Text Here';
+  @Input() text: string | undefined;
   @Input() greeting: string = '';
-  @Input() words: string[] = ['Software Developer'];
+  @Input() words: string[] = [];
+  @Input() time: number = 400;
 
   @ViewChild('HTMLTypingElement', {
     static: false,
@@ -33,13 +34,18 @@ export class TextComponent implements AfterViewInit {
     }
     setTimeout(() => {
       this.type(words, typingElement, count, index, currText, currLetter);
-    }, 500);
+    }, this.time);
   }
 
   ngAfterViewInit(): void {
     if (!this.text) {
       const typingElement = this.htmlTypingElement.nativeElement;
       this.type(this.words, typingElement);
+    }
+    if (this.text && this.words) {
+      this.words.forEach(word => {
+        this.text += word + ', ';
+      });
     }
   }
 
