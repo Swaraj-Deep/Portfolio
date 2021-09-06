@@ -2,11 +2,11 @@ import {AfterViewInit, Component, ElementRef, Input, ViewChild} from '@angular/c
 import {ImageBoxConfig} from "../../models/ImageBox.model";
 
 @Component({
-  selector: 'app-image-box',
-  templateUrl: './image-box.component.html',
-  styleUrls: ['./image-box.component.css']
+  selector: 'app-logo',
+  templateUrl: './logo.component.html',
+  styleUrls: ['./logo.component.css']
 })
-export class ImageBoxComponent implements AfterViewInit {
+export class LogoComponent implements AfterViewInit {
 
   @Input() hoverEffect: boolean = false;
   @Input() configImgSrc: ImageBoxConfig = new ImageBoxConfig({});
@@ -23,7 +23,7 @@ export class ImageBoxComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const imgTag = this.htmlImg.nativeElement;
     Object.keys(this.configImgSrc).forEach((styleDescriptor: any) => {
-      imgTag.style[styleDescriptor] = this.getKeyValue<keyof ImageBoxConfig, ImageBoxConfig>(styleDescriptor)(this.configImgSrc)
+      imgTag.style[styleDescriptor] = this.getKeyValue<keyof ImageBoxConfig, ImageBoxConfig>(styleDescriptor)(this.configImgSrc);
     });
   }
 

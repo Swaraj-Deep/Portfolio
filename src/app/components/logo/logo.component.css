@@ -1,0 +1,7 @@
+.hoverEffect:hover {
+  cursor: pointer;
+}
+
+.image {
+  margin: 0.3em !important;
+}
