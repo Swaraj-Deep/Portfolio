@@ -1,12 +1,13 @@
-<nav class="row bg-dark text-white header">
-  <div class="col-lg-2 col-md-4 col-sm-1 d-flex align-items-center">
+<nav class="bg-dark text-white header d-flex align-items-center justify-content-between">
+  <div>
     <app-logo class="ms-1" [configImgSrc]=configImgSrc [imgSrc]=imgSrc [hoverEffect]=hoverEffect></app-logo>
-    <app-text class="ms-auto" [text]="link" [pointer]="true" *ngFor="let link of leftLinks"></app-text>
+    <app-text class="ms-lg-5 ms-sm-3" [text]="link" [pointer]="true"
+              *ngFor="let link of leftLinks"></app-text>
   </div>
-  <div class="col-lg-7 d-flex ms-5 align-items-center d-none d-lg-flex">
+  <div class="d-none d-lg-flex me-2">
     <app-text class="ms-5" [text]="link" [pointer]="true" *ngFor="let link of rightLinks"></app-text>
   </div>
-  <div class="col-lg-2 col-md-6 col-sm-2 align-items-center">
+  <div class="d-flex d-lg-none">
     <app-hamburger></app-hamburger>
   </div>
 </nav>
