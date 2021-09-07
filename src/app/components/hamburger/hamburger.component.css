@@ -1,0 +1,16 @@
+.nav-icon {
+  margin: 1.7em;
+  width: 2.5em;
+}
+
+.nav-icon:after,
+.nav-icon:before,
+.nav-icon div {
+  background-color: #fff;
+  border-radius: 0.3em;
+  content: '';
+  display: block;
+  height: 0.1em;
+  margin: 0.3em 0;
+  transition: all .2s ease-in-out;
+}

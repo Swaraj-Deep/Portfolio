@@ -8,6 +8,7 @@ import { ImageBoxComponent } from './components/image-box/image-box.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TextComponent } from './components/text/text.component';
 import { LogoComponent } from './components/logo/logo.component';
+import { HamburgerComponent } from './components/hamburger/hamburger.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LogoComponent } from './components/logo/logo.component';
     ImageBoxComponent,
     HeaderComponent,
     TextComponent,
-    LogoComponent
+    LogoComponent,
+    HamburgerComponent
   ],
   imports: [
     BrowserModule

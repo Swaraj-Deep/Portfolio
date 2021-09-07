@@ -12,6 +12,7 @@ export class TextComponent implements AfterViewInit, OnInit {
   @Input() greeting: string = '';
   @Input() words: string[] = [];
   @Input() time: number = 400;
+  @Input() pointer: boolean = false;
 
   @ViewChild('HTMLTypingElement', {
     static: false,

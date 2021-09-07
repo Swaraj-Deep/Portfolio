@@ -11,7 +11,8 @@ export class HeaderComponent implements OnInit {
   configImgSrc: ImageBoxConfig = new ImageBoxConfig({height: '50px', width: '50px', borderRadius: '50%', zIndex: '10'});
   imgSrc: string = 'https://source.unsplash.com/random';
   hoverEffect: boolean = true;
-  title: string = 'Swaraj Deep';
+  leftLinks: string[] = ['Swaraj Deep'];
+  rightLinks: string[] = ['Experience', 'Projects', 'Skills', 'Education', 'Interests', 'Resume'];
 
   constructor() {
   }
