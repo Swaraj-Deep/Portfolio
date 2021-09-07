@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ImageBoxConfig} from "../../models/ImageBox.model";
+import {Link} from "../../models/Link.model";
 
 @Component({
   selector: 'app-header',
@@ -11,8 +12,14 @@ export class HeaderComponent implements OnInit {
   configImgSrc: ImageBoxConfig = new ImageBoxConfig({height: '50px', width: '50px', borderRadius: '50%', zIndex: '10'});
   imgSrc: string = '../assets/Images/image.jpg';
   hoverEffect: boolean = true;
-  leftLinks: string[] = ['Swaraj Deep'];
-  rightLinks: string[] = ['Experience', 'Projects', 'Skills', 'Education', 'Interests', 'Resume'];
+  leftLinks: Link[] = [{toDisplay: 'Swaraj Deep', actualLink: 'home'}];
+  rightLinks: Link[] = [
+    {toDisplay: 'Experience', actualLink: 'experience'},
+    {toDisplay: 'Projects', actualLink: 'projects'},
+    {toDisplay: 'Skills', actualLink: 'skills'},
+    {toDisplay: 'Education', actualLink: 'education'},
+    {toDisplay: 'Interests', actualLink: 'interests'},
+    {toDisplay: 'Resume', actualLink: 'resume'}];
   private isHamOpen: boolean = false;
 
   constructor() {
@@ -27,6 +34,10 @@ export class HeaderComponent implements OnInit {
 
   getHamStatus(): boolean {
     return this.isHamOpen;
+  }
+
+  navigateTo(link: string) {
+    alert(link.toLowerCase());
   }
 
 }
