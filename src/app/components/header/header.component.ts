@@ -13,11 +13,20 @@ export class HeaderComponent implements OnInit {
   hoverEffect: boolean = true;
   leftLinks: string[] = ['Swaraj Deep'];
   rightLinks: string[] = ['Experience', 'Projects', 'Skills', 'Education', 'Interests', 'Resume'];
+  private isHamOpen: boolean = false;
 
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  toggleNavBar(): void {
+    this.isHamOpen = !this.isHamOpen;
+  }
+
+  getHamStatus(): boolean {
+    return this.isHamOpen;
   }
 
 }
