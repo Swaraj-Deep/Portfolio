@@ -9,7 +9,7 @@ import {ImageBoxConfig} from "../../models/ImageBox.model";
 export class HeaderComponent implements OnInit {
 
   configImgSrc: ImageBoxConfig = new ImageBoxConfig({height: '50px', width: '50px', borderRadius: '50%', zIndex: '10'});
-  imgSrc: string = 'https://source.unsplash.com/random';
+  imgSrc: string = '../assets/Images/image.jpg';
   hoverEffect: boolean = true;
   leftLinks: string[] = ['Swaraj Deep'];
   rightLinks: string[] = ['Experience', 'Projects', 'Skills', 'Education', 'Interests', 'Resume'];

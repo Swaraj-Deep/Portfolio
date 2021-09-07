@@ -11,5 +11,17 @@
   display: block;
   height: 0.1em;
   margin: 0.3em 0;
-  transition: all .2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.closeIcon:before {
+  transform: translateY(0.44em) rotate(135deg);
+}
+
+.closeIcon:after {
+  transform: translateY(-0.44em) rotate(-135deg);
+}
+
+.closeIcon div {
+  transform: scale(0);
 }

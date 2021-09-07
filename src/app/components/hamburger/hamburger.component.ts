@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-hamburger',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HamburgerComponent implements OnInit {
 
+  @Input() displayCloseIcon: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
