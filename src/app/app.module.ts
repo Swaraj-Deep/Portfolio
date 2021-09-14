@@ -10,6 +10,7 @@ import { TextComponent } from './components/text/text.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { HamburgerComponent } from './components/hamburger/hamburger.component';
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeComponent } from './components/home/home.component';
     TextComponent,
     LogoComponent,
     HamburgerComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule
