@@ -14,6 +14,7 @@ export class AboutComponent implements OnInit {
     location: "Hyderabad",
     organization: "MAQ Software",
     startDate: new Date("09/14/2021"),
+    endDate: new Date("09/14/2021"),
     techStack: ["JavaScript", "Python", "Angular", "C#", "Windows Presentation Foundation"],
     title: "Software Engineer 1"
   }, {
@@ -21,6 +22,7 @@ export class AboutComponent implements OnInit {
     location: "Hyderabad",
     organization: "Tekion",
     startDate: new Date("09/18/2021"),
+    endDate: new Date("09/24/2021"),
     techStack: ["JavaScript", "Python", "Angular", "C#", "Windows Presentation Foundation"],
     title: "Software Engineer 2"
   }];
@@ -32,7 +34,6 @@ export class AboutComponent implements OnInit {
     this.workExperiences.sort((a: WorkExperience, b: WorkExperience) => {
       return b.startDate.getTime() - a.startDate.getTime();
     });
-    console.log(this.workExperiences);
   }
 
 }

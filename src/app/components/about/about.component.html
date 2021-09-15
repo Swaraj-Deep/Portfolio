@@ -1,14 +1,20 @@
-<section class="container">
+<section class="container mt-5 mt-lg-0">
   <article class="row m-1 justify-content-center" *ngFor="let experience of workExperiences; let i">
-    <div class="col-lg-4 d-flex align-items-center h-25 bg-white flex-column m-2 justify-content-center image-card">
-      <app-text [text]=experience.title class="mt-2"></app-text>
-      <app-text [text]=experience.organization class="mt-2"></app-text>
-      <app-text [text]=experience.location class="mt-2"></app-text>
-      <app-text [text]="experience.startDate.toDateString() + ' - ' + experience.startDate.toDateString()" class="m-2"></app-text>
+    <div class="col-lg-4 d-flex align-items-center h-25 bg-white flex-column m-2 justify-content-center left-card">
+      <app-text [text]=experience.organization class="company-name"></app-text>
+      <app-text [text]="experience.title" [hoverEffect]="true" class="font-monospace designation"></app-text>
+      <app-text [text]="experience.startDate.toDateString() + ' - ' + experience.endDate?.toDateString()"
+                [hoverEffect]="true" class="duration"></app-text>
     </div>
-    <div class="col-lg-7 d-flex align-items-center h-25 bg-white flex-column justify-content-center m-2 info-card">
-      <app-text [text]=points *ngFor="let points of experience.description"></app-text>
-      <app-text [text]=points *ngFor="let points of experience.techStack"></app-text>
+    <div class="col-lg-7 d-flex h-25 bg-white flex-column justify-content-center m-2 ps-5 right-card d-none d-lg-flex">
+      <app-text [text]="'Achievements/Tasks'"></app-text>
+      <ul>
+        <li *ngFor="let points of experience.description" class="font-monospace">{{points}}</li>
+      </ul>
+      <app-text [text]="'Technologies worked on'"></app-text>
+      <ul>
+        <li *ngFor="let points of experience.techStack" class="font-monospace">{{points}}</li>
+      </ul>
     </div>
   </article>
 </section>

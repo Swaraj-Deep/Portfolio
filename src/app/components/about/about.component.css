@@ -1,4 +1,4 @@
-.info-card {
+.right-card {
   height: 20em !important;
   border-radius: 1em !important;
   -webkit-box-shadow: 0 0 1em #9ea7aa;
@@ -10,17 +10,23 @@
   scroll-snap-align: start;
 }
 
-.image-card {
+.left-card {
   height: 20em !important;
   border-radius: 1em !important;
   -webkit-box-shadow: 0 0 1em #9ea7aa;
   box-shadow: 0 0 1em #9ea7aa;
 }
 
-.image-background {
-  height: 30%;
-  width: 100%;
-  background-color: #e8f5e9;
-  margin-top: 0.7em !important;
-  border-radius: .4em;
+.company-name {
+  font-size: 2em;
+  font-family: Monaco, "Lucida Console", monospace;
+  font-weight: bolder;
+}
+.designation {
+  font-size: 0.9em;
+}
+
+.duration {
+  font-size: 0.6em;
+  font-family: Monaco, "Lucida Console", monospace;
 }
