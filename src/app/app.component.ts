@@ -8,4 +8,10 @@ import {ImageBoxConfig} from "./models/ImageBox.model";
 })
 export class AppComponent {
 
+  scrollToView(id: string): void {
+    const elem: HTMLElement = document.getElementById(id)!;
+    elem.scrollIntoView({
+      behavior: "smooth"
+    });
+  }
 }

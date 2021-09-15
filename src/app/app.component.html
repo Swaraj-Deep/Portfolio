@@ -1,5 +1,5 @@
-<app-header></app-header>
+<app-header (onLinkClick)="scrollToView($event)"></app-header>
 <div class="container">
-  <app-home></app-home>
-  <app-about></app-about>
+  <app-home id="home"></app-home>
+  <app-about id="experience"></app-about>
 </div>

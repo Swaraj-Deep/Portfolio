@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {ImageBoxConfig} from "../../models/ImageBox.model";
 import {Link} from "../../models/Link.model";
 
@@ -9,6 +9,7 @@ import {Link} from "../../models/Link.model";
 })
 export class HeaderComponent implements OnInit {
 
+  @Output() onLinkClick: EventEmitter<string> = new EventEmitter<string>();
   configImgSrc: ImageBoxConfig = new ImageBoxConfig({height: '50px', width: '50px', borderRadius: '50%', zIndex: '10'});
   imgSrc: string = '../assets/Images/image.jpg';
   hoverEffect: boolean = true;
@@ -37,7 +38,7 @@ export class HeaderComponent implements OnInit {
   }
 
   navigateTo(link: string) {
-
+  this.onLinkClick.emit(link);
   }
 
 }
