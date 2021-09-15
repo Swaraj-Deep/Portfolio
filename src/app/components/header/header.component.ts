@@ -37,8 +37,17 @@ export class HeaderComponent implements OnInit {
     return this.isHamOpen;
   }
 
-  navigateTo(link: string) {
+  navigateTo(link: string, $event: MouseEvent) {
     this.onLinkClick.emit(link);
+    const elem: HTMLElement | null = ($event.target as HTMLElement).closest('app-text');
+    const activeList: HTMLElement | null = document.querySelector('.link-active');
+    if (elem) {
+      if (activeList) {
+        console.log(activeList)
+        activeList.classList.remove('link-active');
+      }
+      elem.classList.add('link-active')
+    }
   }
 
 }

@@ -10,8 +10,17 @@
   flex-basis: 100%;
   height: auto;
 }
+
 .menu-item {
   flex-basis: 100%;
   height: auto;
   margin: 0.5em;
+}
+
+.link-color {
+  color: #e8f5e9;
+}
+
+.link-active {
+  color: #81c784;
 }
