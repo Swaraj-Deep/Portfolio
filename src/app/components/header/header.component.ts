@@ -38,7 +38,7 @@ export class HeaderComponent implements OnInit {
   }
 
   navigateTo(link: string) {
-  this.onLinkClick.emit(link);
+    this.onLinkClick.emit(link);
   }
 
 }
