@@ -8,6 +8,7 @@
 .container {
   height: 90vh;
   scroll-snap-align: start;
+  margin-top: 10em !important;
 }
 
 .image-card {

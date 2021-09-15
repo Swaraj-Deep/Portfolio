@@ -1,7 +1,9 @@
 .header {
   padding: 0.8em !important;
   box-shadow: 0 0 0.8em black;
-  margin-bottom: 2.5em;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .toggle-menu {
