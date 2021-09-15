@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
   }
 
   navigateTo(link: string) {
-    alert(link.toLowerCase());
+
   }
 
 }

@@ -1,5 +1,5 @@
 .right-card {
-  height: 20em !important;
+  height: 25em !important;
   border-radius: 1em !important;
   -webkit-box-shadow: 0 0 1em #9ea7aa;
   box-shadow: 0 0 1em #9ea7aa;
@@ -11,7 +11,7 @@
 }
 
 .left-card {
-  height: 20em !important;
+  height: 25em !important;
   border-radius: 1em !important;
   -webkit-box-shadow: 0 0 1em #9ea7aa;
   box-shadow: 0 0 1em #9ea7aa;
@@ -22,11 +22,22 @@
   font-family: Monaco, "Lucida Console", monospace;
   font-weight: bolder;
 }
+
 .designation {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .duration {
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-family: Monaco, "Lucida Console", monospace;
+}
+
+.bullet-points {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bullets {
+  flex-basis: 50%;
 }
