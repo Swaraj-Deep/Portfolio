@@ -11,7 +11,7 @@ export class AppComponent {
     const elem: HTMLElement | null = document.getElementById(id);
     if (elem) {
       elem.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",
       });
       window.history.pushState(`Move to ${id}`, `${id}`, `${window.location.origin}/#${id}`);
     }

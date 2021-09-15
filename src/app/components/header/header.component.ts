@@ -43,7 +43,6 @@ export class HeaderComponent implements OnInit {
     const activeList: HTMLElement | null = document.querySelector('.link-active');
     if (elem) {
       if (activeList) {
-        console.log(activeList)
         activeList.classList.remove('link-active');
       }
       elem.classList.add('link-active')
