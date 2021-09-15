@@ -3,11 +3,11 @@ import {ImageBoxConfig} from "../../models/ImageBox.model";
 import {WorkExperience} from "../../models/WorkExperience.model";
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  selector: 'app-experience',
+  templateUrl: './experience.component.html',
+  styleUrls: ['./experience.component.css']
 })
-export class AboutComponent implements OnInit {
+export class ExperienceComponent implements OnInit {
 
   workExperiences: WorkExperience[] = [{
     description: ["Worked on REST API solution in ASP.NET MVC pattern", "Implemented the frontend to interact with the REST\n"
