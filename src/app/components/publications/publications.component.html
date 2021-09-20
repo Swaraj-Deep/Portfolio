@@ -1,0 +1,15 @@
+<section class="container top-adjustment">
+  <article class="row m-1 justify-content-center" *ngFor="let publication of publications; let i">
+    <div class="col-lg-4 d-flex align-items-center h-25 bg-white flex-column m-2 justify-content-center compact-card">
+      <app-text [text]=publication.paperName class="paper-name"></app-text>
+      <app-text [text]="publication.publishedIn" [hoverEffect]="true" class="font-monospace published-in"></app-text>
+      <app-text [text]="publication.publishedOn.toDateString()"
+                [hoverEffect]="true" class="published-on"></app-text>
+    </div>
+    <div
+      class="col-lg-7 d-flex h-25 bg-white flex-column justify-content-center m-2 ps-5 description-card d-none d-lg-flex">
+      <app-text [text]="'Description'"></app-text>
+      <app-text [text]="publication.description" class="publication-description"></app-text>
+    </div>
+  </article>
+</section>

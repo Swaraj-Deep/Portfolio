@@ -1,0 +1,44 @@
+.description-card {
+  height: 35em !important;
+  border-radius: 1em !important;
+  -webkit-box-shadow: 0 0 1em #9ea7aa;
+  box-shadow: 0 0 1em #9ea7aa;
+  background: linear-gradient(90deg, #e8f5e9 20%, #f1f8e9 80%);
+}
+
+.container {
+  height: 90vh;
+  scroll-snap-align: start;
+}
+
+.compact-card {
+  height: 35em !important;
+  border-radius: 1em !important;
+  -webkit-box-shadow: 0 0 1em #9ea7aa;
+  box-shadow: 0 0 1em #9ea7aa;
+  background: linear-gradient(270deg, #e8f5e9 20%, #f1f8e9 80%);
+}
+
+.paper-name {
+  font-size: 2em;
+  font-family: Monaco, "Lucida Console", monospace;
+  font-weight: bolder;
+}
+
+.published-in {
+  font-size: 1em;
+}
+
+.published-on {
+  font-size: 0.7em;
+  font-family: Monaco, "Lucida Console", monospace;
+}
+
+.publication-description {
+  font-size: 0.88em;
+  font-family: Monaco, "Lucida Console", monospace;
+}
+
+.top-adjustment {
+  margin-top: 15em !important;
+}
