@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   });
   about: string = "Full stack developer with focus on efficient & scalable backend, intuitive user interface who writes clean, elegant\n" +
     "        and efficient code. I look for new challenges and opportunities that are meaningful to me. Apart from writing code, I spend\n" +
-    "         my time reading experience space science, ancient architecture and aqua spacing."
+    "         my time reading space science, ancient architecture and aqua spacing."
   imgSrc: string = '../assets/Images/image.jpg';
 
   constructor() {

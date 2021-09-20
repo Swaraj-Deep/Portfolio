@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
   leftLinks: Link[] = [{toDisplay: 'Swaraj Deep', actualLink: 'home'}];
   rightLinks: Link[] = [
     {toDisplay: 'Experience', actualLink: 'experience'},
+    {toDisplay: 'Publications', actualLink: 'publications'},
     {toDisplay: 'Projects', actualLink: 'projects'},
     {toDisplay: 'Skills', actualLink: 'skills'},
     {toDisplay: 'Education', actualLink: 'education'},
