@@ -27,12 +27,19 @@ export class HeaderComponent implements AfterViewInit {
   constructor() {
   }
 
-  ngAfterViewInit(): void {
+  private setLinkStateOnLoad() {
     this.leftLinks = this.leftLinks.map((link) => {
       return {...link, isActive: window.location.hash.slice(1) === link.actualLink};
     });
     this.rightLinks = this.rightLinks.map((link) => {
       return {...link, isActive: window.location.hash.slice(1) === link.actualLink};
+    });
+  }
+
+  ngAfterViewInit(): void {
+    this.setLinkStateOnLoad()
+    window.addEventListener('popstate', () => {
+      this.setLinkStateOnLoad();
     });
   }
 
@@ -44,13 +51,17 @@ export class HeaderComponent implements AfterViewInit {
     return this.isHamOpen;
   }
 
-  navigateTo(pLink: Link) {
+  private setLinkState(pLink: Link) {
     this.leftLinks = this.leftLinks.map(link => {
       return pLink.actualLink === link.actualLink ? {...link, isActive: true} : {...link, isActive: false};
     });
     this.rightLinks = this.rightLinks.map(link => {
       return pLink.actualLink === link.actualLink ? {...link, isActive: true} : {...link, isActive: false};
     });
+  }
+
+  navigateTo(pLink: Link) {
+    this.setLinkState(pLink);
     this.onLinkClick.emit(pLink.actualLink);
   }
 
