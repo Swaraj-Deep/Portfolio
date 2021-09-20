@@ -44,16 +44,14 @@ export class HeaderComponent implements AfterViewInit {
     return this.isHamOpen;
   }
 
-  navigateTo(link: string, $event: MouseEvent) {
-    this.onLinkClick.emit(link);
-    const elem: HTMLElement | null = ($event.target as HTMLElement).closest('app-text');
-    const activeList: HTMLElement | null = document.querySelector('.link-active');
-    if (elem) {
-      if (activeList) {
-        activeList.classList.remove('link-active');
-      }
-      elem.classList.add('link-active')
-    }
+  navigateTo(pLink: Link) {
+    this.leftLinks = this.leftLinks.map(link => {
+      return pLink.actualLink === link.actualLink ? {...link, isActive: true} : {...link, isActive: false};
+    });
+    this.rightLinks = this.rightLinks.map(link => {
+      return pLink.actualLink === link.actualLink ? {...link, isActive: true} : {...link, isActive: false};
+    });
+    this.onLinkClick.emit(pLink.actualLink);
   }
 
 }

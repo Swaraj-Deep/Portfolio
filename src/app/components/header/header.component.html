@@ -4,12 +4,12 @@
       <app-logo class="ms-1" [configImgSrc]=configImgSrc [imgSrc]=imgSrc [hoverEffect]=hoverEffect></app-logo>
       <app-text class="ms-lg-5 ms-sm-3 link-color" [text]="link.toDisplay" [pointer]="true"
                 [ngClass]="{'link-active': link.isActive}"
-                *ngFor="let link of leftLinks" (click)="navigateTo(link.actualLink, $event)"></app-text>
+                *ngFor="let link of leftLinks" (click)="navigateTo(link)"></app-text>
     </div>
     <div class="d-none d-lg-flex me-2">
       <app-text class="ms-5 link-color" [text]="link.toDisplay" [pointer]="true" *ngFor="let link of rightLinks"
                 [ngClass]="{'link-active': link.isActive}"
-                (click)="navigateTo(link.actualLink,$event)"></app-text>
+                (click)="navigateTo(link)"></app-text>
     </div>
     <div class="d-flex d-lg-none">
       <app-hamburger [displayCloseIcon]="getHamStatus()" (click)="toggleNavBar()"></app-hamburger>
@@ -20,7 +20,7 @@
                   [text]="link.toDisplay"
                   [pointer]="true"
                   [ngClass]="{'link-active': link.isActive}"
-                  *ngFor="let link of rightLinks" (click)="navigateTo(link.actualLink,$event)"></app-text>
+                  *ngFor="let link of rightLinks" (click)="navigateTo(link)"></app-text>
       </div>
     </div>
   </nav>
