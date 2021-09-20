@@ -1,4 +1,4 @@
-<span class="text" [ngClass]="{hoverEffect: hoverEffect, ptr: pointer}">
+<span class="text" (click)="link && navigateToLink()" [ngClass]="{hoverEffect: hoverEffect, ptr: pointer || link, underline: link}">
   {{text}}
 </span>
 <div class="d-flex align-items-center" *ngIf="!text">

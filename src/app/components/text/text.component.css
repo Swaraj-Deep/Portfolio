@@ -39,3 +39,10 @@
   }
 
 }
+
+.underline {
+  text-decoration: underline;
+  text-anchor: start;
+  text-underline-position: under;
+  text-decoration-color: #81c784;
+}

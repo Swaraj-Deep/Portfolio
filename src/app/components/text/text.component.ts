@@ -13,6 +13,7 @@ export class TextComponent implements AfterViewInit, OnInit {
   @Input() words: string[] = [];
   @Input() time: number = 400;
   @Input() pointer: boolean = false;
+  @Input() link: string = '';
 
   @ViewChild('HTMLTypingElement', {
     static: false,
@@ -55,4 +56,7 @@ export class TextComponent implements AfterViewInit, OnInit {
 
   }
 
+  navigateToLink(): void {
+    window.open(this.link, '_blank');
+  }
 }
