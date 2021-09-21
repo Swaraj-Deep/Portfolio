@@ -16,11 +16,11 @@ export class HeaderComponent implements AfterViewInit {
   leftLinks: Link[] = [{toDisplay: 'Swaraj Deep', actualLink: 'home'}];
   rightLinks: Link[] = [
     {toDisplay: 'Experience', actualLink: 'experience'},
+    {toDisplay: 'Skills', actualLink: 'skills'},
     {toDisplay: 'Publications', actualLink: 'publications'},
     {toDisplay: 'Projects', actualLink: 'projects'},
-    {toDisplay: 'Skills', actualLink: 'skills'},
-    {toDisplay: 'Education', actualLink: 'education'},
     {toDisplay: 'Interests', actualLink: 'interests'},
+    {toDisplay: 'Education', actualLink: 'education'},
     {toDisplay: 'Resume', actualLink: 'resume'}];
   private isHamOpen: boolean = false;
 
