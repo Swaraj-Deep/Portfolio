@@ -12,6 +12,7 @@ import {HamburgerComponent} from './components/hamburger/hamburger.component';
 import {HomeComponent} from './components/home/home.component';
 import {ExperienceComponent} from './components/experience/experience.component';
 import { PublicationsComponent } from './components/publications/publications.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PublicationsComponent } from './components/publications/publications.co
     HamburgerComponent,
     HomeComponent,
     ExperienceComponent,
-    PublicationsComponent
+    PublicationsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule

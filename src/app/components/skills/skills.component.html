@@ -1,0 +1,13 @@
+<section class="container mt-5 mt-lg-0">
+  <article class="row m-1 justify-content-center">
+    <div class="col-lg-4 d-flex align-items-center h-25 bg-white flex-column m-2 justify-content-center list-card">
+      <ul>
+        <li *ngFor="let skill of skills" (click)="setDescription(skill)"> {{skill.technology}} </li>
+      </ul>
+    </div>
+    <div class="col-lg-7 d-flex h-25 bg-white flex-column justify-content-center m-2 ps-5 desc-card d-none d-lg-flex">
+      <app-text [text]="'Achievements/Tasks'"></app-text>
+      {{ description }}
+    </div>
+  </article>
+</section>
