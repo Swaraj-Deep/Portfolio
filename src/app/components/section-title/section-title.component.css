@@ -8,6 +8,12 @@
   margin-bottom: 0.8em;
   font-family: Monaco, "Lucida Console", monospace;
   border-radius: 0.6em;
-  box-shadow: 0 0 0.5em black;
+  box-shadow:
+    0 0 .5rem #fff,
+    inset 0 0 .5rem #fff,
+    0 0 0.2rem #9ea7aa,
+    inset 0 0 0.2rem #9ea7aa,
+    0 0 0.4rem #9ea7aa,
+    inset 0 0 0.4rem #9ea7aa;
   background: linear-gradient(270deg, #e8f5e9 20%, #f1f8e9 80%)
 }
