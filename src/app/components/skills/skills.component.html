@@ -1,5 +1,6 @@
 <section class="container mt-5 mt-lg-0">
   <article class="row m-1 justify-content-center">
+    <app-section-title [title]="'Skills'"></app-section-title>
     <div class="col-lg-4 d-flex align-items-center h-25 bg-white flex-column m-2 justify-content-center list-card">
       <ul>
         <li *ngFor="let skill of skills" (click)="setDescription(skill)"> {{skill.technology}} </li>

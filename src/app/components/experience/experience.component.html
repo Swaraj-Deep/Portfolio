@@ -1,4 +1,5 @@
 <section class="container mt-5 mt-lg-0">
+  <app-section-title [title]="'Work Experience'"></app-section-title>
   <article class="row m-1 justify-content-center" *ngFor="let experience of workExperiences; let i">
     <div class="col-lg-4 d-flex align-items-center h-25 bg-white flex-column m-2 justify-content-center left-card">
       <app-text [text]=experience.organization class="company-name"></app-text>

@@ -1,0 +1,13 @@
+.section-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2em;
+  font-size: 1.1em;
+  margin-bottom: 0.8em;
+  font-family: Monaco, "Lucida Console", monospace;
+  border-radius: 0.6em;
+  box-shadow: 0 0 0.5em black;
+  background: linear-gradient(270deg, #e8f5e9 20%, #f1f8e9 80%)
+}
