@@ -32,4 +32,10 @@
 
 .bullets {
   flex-basis: 50%;
+  cursor: pointer;
+}
+
+
+.top-adjustment {
+  margin-top: 15em !important;
 }

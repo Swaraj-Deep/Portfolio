@@ -7,7 +7,7 @@ import {Skill} from "../../models/Skill.model";
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-
+  title: string = `Technologies I'm good at`
   skills: Skill[] = [
     {
       id: '1',

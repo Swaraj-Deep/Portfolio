@@ -1,13 +1,14 @@
-<section class="container mt-5 mt-lg-0">
+<section class="container mt-5 mt-lg-0 top-adjustment">
   <article class="row m-1 justify-content-center">
     <app-section-title [title]="'Skills'"></app-section-title>
-    <div class="col-lg-4 d-flex align-items-center h-25 bg-white flex-column m-2 justify-content-center list-card">
-      <ul>
-        <li *ngFor="let skill of skills" (click)="setDescription(skill)"> {{skill.technology}} </li>
+    <div class="col-lg-4 d-flex h-25 bg-white flex-column m-2 justify-content-center list-card">
+      <app-text [text]="title" class="mb-5"></app-text>
+      <ul class="bullet-points">
+        <li *ngFor="let skill of skills" (click)="setDescription(skill)" class="bullets"> {{skill.technology}} </li>
       </ul>
     </div>
     <div class="col-lg-7 d-flex h-25 bg-white flex-column justify-content-center m-2 ps-5 desc-card d-none d-lg-flex">
-      <app-text [text]="'Achievements/Tasks'"></app-text>
+      <app-text [text]="'Description'" class="mb-3"></app-text>
       {{ description }}
     </div>
   </article>
