@@ -7,7 +7,7 @@
 }
 
 .container {
-  height: 90vh;
+  /*height: 90vh;*/
   scroll-snap-align: start;
 }
 
@@ -33,9 +33,4 @@
 .bullets {
   flex-basis: 50%;
   cursor: pointer;
-}
-
-
-.top-adjustment {
-  margin-top: 15em !important;
 }
