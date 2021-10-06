@@ -1,5 +1,5 @@
-.description-card {
-  height: 35em !important;
+.project-description-card {
+  height: 25em !important;
   border-radius: 1em !important;
   -webkit-box-shadow: 0 0 1em #9ea7aa;
   box-shadow: 0 0 1em #9ea7aa;
@@ -10,30 +10,37 @@
   scroll-snap-align: start;
 }
 
-.compact-card {
-  height: 35em !important;
+.project-compact-card {
+  height: 25em !important;
   border-radius: 1em !important;
   -webkit-box-shadow: 0 0 1em #9ea7aa;
   box-shadow: 0 0 1em #9ea7aa;
   background: linear-gradient(270deg, #e8f5e9 20%, #f1f8e9 80%);
 }
 
-.paper-name {
+.project-name {
   font-size: 2em;
   font-family: Monaco, "Lucida Console", monospace;
   font-weight: bolder;
+  margin-bottom: 0.8em !important;
 }
 
-.published-in {
-  font-size: 1em;
-}
-
-.published-on {
+.duration {
   font-size: 0.7em;
   font-family: Monaco, "Lucida Console", monospace;
 }
 
-.publication-description {
+.bullet-points {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bullets {
+  flex-basis: 50%;
+}
+
+.project-description {
   font-size: 0.88em;
   font-family: Monaco, "Lucida Console", monospace;
 }
