@@ -9,7 +9,7 @@ import {Link} from "../../models/Link.model";
 })
 export class HeaderComponent implements AfterViewInit {
 
-  @Output() onLinkClick: EventEmitter<string> = new EventEmitter<string>();
+  @Output() onLinkClick: EventEmitter<{ id: string, toChangeAddressBar?: boolean }> = new EventEmitter<{ id: string, toChangeAddressBar?: boolean }>();
   configImgSrc: ImageBoxConfig = new ImageBoxConfig({height: '50px', width: '50px', borderRadius: '50%', zIndex: '10'});
   imgSrc: string = '../assets/Images/image.jpg';
   hoverEffect: boolean = true;
@@ -39,6 +39,7 @@ export class HeaderComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     this.setLinkStateOnLoad()
     window.addEventListener('popstate', () => {
+      this.onLinkClick.emit({id: window.location.hash.slice(1), toChangeAddressBar: false});
       this.setLinkStateOnLoad();
     });
   }
@@ -62,7 +63,7 @@ export class HeaderComponent implements AfterViewInit {
 
   navigateTo(pLink: Link) {
     this.setLinkState(pLink);
-    this.onLinkClick.emit(pLink.actualLink);
+    this.onLinkClick.emit({id: pLink.actualLink});
   }
 
 }

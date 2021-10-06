@@ -7,13 +7,15 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
 
-  scrollToView(id: string): void {
+  scrollToView({id, toChangeAddressBar = true}: { id: string, toChangeAddressBar?: boolean }): void {
     const elem: HTMLElement | null = document.getElementById(id);
     if (elem) {
       elem.scrollIntoView({
         behavior: "smooth",
       });
-      window.history.pushState(`Move to ${id}`, `${id}`, `${window.location.origin}/#${id}`);
+      if (toChangeAddressBar) {
+        window.history.pushState(`Move to ${id}`, `${id}`, `${window.location.origin}/#${id}`);
+      }
     }
   }
 }
