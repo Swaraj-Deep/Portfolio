@@ -1,16 +1,15 @@
 .section-title {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.2em;
   font-size: 1.1em;
-  margin-bottom: 0.8em;
+  margin: 2.5em !important;
   font-family: Monaco, "Lucida Console", monospace;
   border-radius: 0.6em;
   box-shadow:
-    0 0 .5rem #fff,
-    inset 0 0 .5rem #fff,
+    0 0 0.5rem #ffffff,
+    inset 0 0 0.5rem #ffffff,
     0 0 0.2rem #9ea7aa,
     inset 0 0 0.2rem #9ea7aa,
     0 0 0.4rem #9ea7aa,

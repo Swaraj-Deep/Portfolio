@@ -1,3 +1,6 @@
 .container {
   scroll-snap-type: y mandatory;
 }
+.divider {
+  margin: 6.5em !important;
+}
