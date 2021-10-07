@@ -19,7 +19,6 @@ export class HeaderComponent implements AfterViewInit {
     {toDisplay: 'Skills', actualLink: 'skills'},
     {toDisplay: 'Publications', actualLink: 'publications'},
     {toDisplay: 'Projects', actualLink: 'projects'},
-    {toDisplay: 'Interests', actualLink: 'interests'},
     {toDisplay: 'Education', actualLink: 'education'},
     {toDisplay: 'Resume', actualLink: 'resume'}];
   private isHamOpen: boolean = false;
