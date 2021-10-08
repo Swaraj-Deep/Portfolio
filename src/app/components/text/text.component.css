@@ -8,6 +8,10 @@
   cursor: pointer;
 }
 
+.bold {
+  font-weight: 800;
+}
+
 .hoverEffect:hover {
   margin-top: 0.3em !important;
   margin-bottom: 0.3em !important;

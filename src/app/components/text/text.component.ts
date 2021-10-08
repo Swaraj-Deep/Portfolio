@@ -14,6 +14,7 @@ export class TextComponent implements AfterViewInit, OnInit {
   @Input() time: number = 400;
   @Input() pointer: boolean = false;
   @Input() link: string = '';
+  @Input() boldText: boolean = false;
 
   @ViewChild('HTMLTypingElement', {
     static: false,

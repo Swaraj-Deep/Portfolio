@@ -1,7 +1,7 @@
 <section class="container">
   <app-section-title [title]="'Publications'"></app-section-title>
   <article class="row m-1 justify-content-center" *ngFor="let publication of publications; let i=index">
-    <div class="col-lg-4 d-flex align-items-center h-25 bg-white flex-column m-2 justify-content-center compact-card">
+    <div class="col-lg-4 d-flex h-25 bg-white flex-column m-2 justify-content-center compact-card">
       <app-text [text]=publication.paperName [link]="publication.linkToPaper" class="paper-name"></app-text>
       <app-text [text]="publication.publishedIn" [hoverEffect]="true"
                 class="font-monospace published-in my-1"></app-text>

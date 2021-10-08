@@ -2,10 +2,10 @@
   <app-section-title [title]="'Education'"></app-section-title>
   <div class="d-flex flex-wrap m-lg-4">
     <article class="m-1" *ngFor="let education of educations; let i=index">
-      <div class="d-flex h-25 bg-white flex-column m-2 justify-content-center education-card">
-        <app-text [text]="education.courseName" class="font-monospace course-name"></app-text>
-        <app-text [text]="education.instituteName" class="font-monospace"></app-text>
-        <div class="d-flex justify-content-between">
+      <div class="d-flex h-25 bg-white flex-column m-2 education-card">
+        <app-text [text]="education.courseName" [boldText]="true" class="font-monospace course-name pt-2"></app-text>
+        <app-text [text]="education.instituteName" class="font-monospace pt-2"></app-text>
+        <div class="d-flex justify-content-between pt-2">
           <app-text [text]="education.percentage" *ngIf="education.percentage" class="font-monospace"></app-text>
           <app-text [text]="education.cgpa" *ngIf="education.cgpa" class="font-monospace"></app-text>
           <app-text
