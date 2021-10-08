@@ -1,0 +1,14 @@
+.education-card {
+  height: 15em !important;
+  max-width: 20em;
+  border-radius: 1em !important;
+  -webkit-box-shadow: 0 0 1em #9ea7aa;
+  box-shadow: 0 0 1em #9ea7aa;
+  background: linear-gradient(270deg, #e8f5e9 20%, #f1f8e9 80%);
+  padding: 1em;
+}
+
+.course-name {
+  font-size: 1em;
+  font-weight: 900;
+}
