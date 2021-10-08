@@ -2,7 +2,7 @@
   <article class="row m-1 justify-content-center">
     <app-section-title [title]="'Skills'"></app-section-title>
     <div class="col-lg-4 d-flex h-25 bg-white flex-column m-2 justify-content-center list-card">
-      <app-text [text]="title" class="mb-5"></app-text>
+      <app-text [text]="title" class="mb-2"></app-text>
       <ul class="bullet-points">
         <li *ngFor="let skill of skills" (click)="setDescription(skill)" class="bullets"> {{skill.technology}} </li>
       </ul>
