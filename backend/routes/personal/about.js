@@ -19,6 +19,10 @@ router.patch("/experience", (req, res, next) => {
   });
 });
 
-router.delete("/experience", (req, res, next) => {});
+router.delete("/experience", (req, res, next) => {
+  res.status(201).json({
+    message: "Resource Deleted",
+  });
+});
 
 module.exports = router;
