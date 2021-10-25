@@ -13,7 +13,11 @@ router.post("/experience", (req, res, next) => {
   });
 });
 
-router.patch("/experience", (req, res, next) => {});
+router.patch("/experience", (req, res, next) => {
+  res.status(201).json({
+    message: "Resource Updated",
+  });
+});
 
 router.delete("/experience", (req, res, next) => {});
 
