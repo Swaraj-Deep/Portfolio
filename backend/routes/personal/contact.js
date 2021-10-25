@@ -26,7 +26,9 @@ router.get('/contact', (req, res, next) => {
 });
 
 router.post('/contact', (req, res, next) => {
-
+  res.status(201).json({
+    message: "Resource Created",
+  });
 });
 
 router.patch('/contact', (req, res, next) => {
